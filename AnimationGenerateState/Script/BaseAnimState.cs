@@ -9,6 +9,11 @@ public abstract class BaseAnimState<TEnum> where TEnum : Enum
     // 派生クラスで実装を強制する抽象メソッド
     protected abstract void InitializeStateNames();
 
+    public BaseAnimState()
+    {
+
+    }
+
     // 静的コンストラクタで初期化チェック
     static BaseAnimState()
     {
