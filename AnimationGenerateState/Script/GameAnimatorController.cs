@@ -101,7 +101,7 @@ public class GameAnimatorController<TState, TEnum>
 
         currentState = state;
         isPlaying = true;
-
+        await UniTask.Yield();
         try
         {
             // アニメーション終了を待機（逆再生の場合は0以下、正再生は1以上）

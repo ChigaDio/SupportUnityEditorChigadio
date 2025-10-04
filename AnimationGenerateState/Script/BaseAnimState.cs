@@ -1,7 +1,9 @@
 using System;
 using System.Collections.Generic;
 
-public abstract class BaseAnimState<TEnum> where TEnum : Enum
+
+
+public abstract class BaseAnimState<TEnum>  where TEnum : Enum
 {
     // ”h¶ƒNƒ‰ƒX‚Å‰Šú‰»‚·‚éDictionary
     protected static  Dictionary<TEnum, string> StateNames;
